@@ -1,0 +1,31 @@
+a {
+    text-decoration: none !important;
+    color: black;
+}
+
+.SidebarChatRoom {
+    display: flex;
+    padding: 20px;
+    cursor: pointer;
+    border-bottom: 1px solid lightgray;
+}
+
+.SidebarChatRoom:active {
+    background-color: green;
+    color: white;
+}
+
+.SidebarChatRoom:hover {
+    background-color: green;
+    color: white;
+    box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.25), 0px 1px 3px rgba(0, 0, 0, 0.15);
+}
+
+.SidebarChatName > h2 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.SidebarChatName {
+    margin-left: 15px;
+}

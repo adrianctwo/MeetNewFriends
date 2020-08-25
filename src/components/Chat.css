@@ -1,0 +1,111 @@
+.Chat {
+    flex: 0.65;
+    display: flex;
+    flex-direction: column;
+    background-color: navyblue;
+}
+
+.ChatHeader {
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+}
+
+.ChatHeaderInfo {
+    flex: 1;
+    padding-left: 20px;
+}
+
+.ChatHeaderInfo > h3 {
+    margin-bottom: 3px;
+    font-weight: 500;
+    color: white;
+}
+
+.ChatHeaderInfo > p {
+    color: lightGray;
+}
+
+.ChatHeaderRight {
+    display: flex;
+    justify-content: space-between;
+    min-width: 100px;
+}
+
+.ChatHeaderRight > .MuiButtonBase-root > .MuiIconButton-label> .MuiSvgIcon-root {
+    color: white;
+}
+
+.ChatBody {
+    flex: 1;
+    background-image: url("../assets/gaming-pattern.png");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow: scroll;
+}
+
+.ChatBody::-webkit-scrollbar {
+    display: none;
+}
+
+.ChatMessage {
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    background-color: green;
+    border-radius: 20px;
+    width: fit-content;
+    margin-bottom: 15px;
+    color: white;
+}
+
+.ChatName {
+    color: black;
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: xx-small;
+}
+
+.ChatTimeStamp {
+    margin-left: 10px;
+    font-size: xx-small;
+}
+
+.ChatReciever {
+    margin-left: auto;
+    background: yellow;
+    color: black;
+}
+
+.ChatFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 62px;
+    border-top: 1px solid lightgray;
+}
+
+.ChatFooter > form {
+    flex: 1;
+    display: flex;
+}
+
+.ChatFooter > form > input {
+    flex: 1;
+    border-radius: 30px;
+    padding: 10px;
+    border: none;
+}
+
+.ChatFooter > form > button {
+    display: none;
+}
+
+.ChatFooter > .MuiSvgIcon-root {
+    padding: 10px;
+    color: white;
+}
+
