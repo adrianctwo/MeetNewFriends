@@ -96,16 +96,20 @@ function Chat() {
             </div>
 
             <div className="ChatBody">
-                {messages.map(message => (
-                    <p className={`ChatMessage ${message.name === user.displayName && "ChatReciever"}`}>
-                        <span className="ChatName">{message.name}</span>
-                        {message.message}
-                        <span className="ChatTimeStamp">{new Date(message.timestamp?.toDate()).toUTCString()}</span>
-                    </p>
-                ))}
+                <div>
+                    {messages.map(message => (
+                        <div>
+                            <p className={`ChatMessage ${message.name === user.displayName && "ChatReciever"}`}>
+                                <span className="ChatName">{message.name}</span>
+                                {message.message}
+                                <span className="ChatTimeStamp">{new Date(message.timestamp?.toDate()).toUTCString()}</span>
+                            </p>
+                        </div>
+                    ))}
+                </div>
             </div>
             <div className="ChatFooter">
-                <div className="EmojiBox" style={{ display: showEmoji ? "block" : 'none' }}> 
+                <div className="EmojiBox" style={{ display: showEmoji ? "block" : 'none' }}>
                     <Picker onEmojiClick={onEmojiClick} />
                     <button onClick={sendEmoji} type="submit">Send {chosenEmoji.emoji}</button>
                 </div>
