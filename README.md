@@ -25,6 +25,7 @@ Meet New Friends is an application which is used to meet new people who are also
 User can join chat rooms or create their own chat rooms to meet new friends.
 Users in a chat room is able to chat with each other in real time without refreashing the page.
 User will also be able to send and recieve emojis.
+
 ![Meet New Friends](src/assets/emoji.PNG)
 
 [Deployed project](https://meetnewfriends-51eaa.web.app/)
